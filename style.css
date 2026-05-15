@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: white;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    /* Pastikan nama file background lu: bg.jpg */background: url('100083927263.jpg');
+    
+    background: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Biar teks gampang dibaca */
+}
+
+nav {
+    z-index: 10;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.logo span { color: #0088ff; }
+
+.hero-content {
+    z-index: 10;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.profile-frame img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #0088ff;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 10px; }
+.blue-text { color: #0088ff; }
+
+.status { font-size: 1rem; color: #ccc; }
+.relationship { margin-top: 5px; font-style: italic; }
+.jomblo { color: #ff4d4d; font-weight: bold; }
+
+.socmed { margin-top: 30px; }
+.socmed a {
+    text-decoration: none;
+    color: white;
+    background: #0088ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.socmed a:hover { background: #0055aa; }
+
+.info-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    border-bottom: 3px solid #333;
+}
+
+.card.highlight {
+    border-bottom: 3px solid #0088ff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 0.8rem;
+}
+
+/* Responsif buat HP */
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    .profile-frame img { width: 120px; height: 120px; }
+}
