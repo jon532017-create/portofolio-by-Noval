@@ -241,12 +241,17 @@ footer {
 }
 
 .styled-table tbody tr {
-    border-bottom: 1px solid #222;
-    background-color: #1a1a1a;
+    border-bottom: 1px solid #333; /* Garis pemisah lebih terang */
+    background-color: #252525;    /* Warna baris jadi abu-abu gelap, bukan item pekat */
+    color: #ffffff;               /* Pastiin teksnya putih */
 }
 
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #0088ff;
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #2c2c2c;    /* Baris genap warnanya beda dikit biar gak ngebosenin */
+}
+
+.styled-table tbody tr:hover {
+    background-color: #333;       /* Pas disentuh/di-hover berubah warnanya */
 }
 
 /* Warna khusus buat Grade */
