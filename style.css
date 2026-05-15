@@ -11,18 +11,19 @@ body {
 }
 
 header {
-    height: 100vh;
+    min-height: 20vh; /* Ganti dari 100vh jadi min-height 60vh */
     width: 100%;
-    /* Pastikan nama file background lu: bg.jpg */background: url('100083927263.jpg');
-    
-    background: url('bg.jpg');
+    background: url('1000423805.jpg'); /* Sesuaikan nama file bg lu */
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding-bottom: 50px; /* Tambahin ini biar ada ruang di bawah tombol */
+    padding-top: 50px;    /* Tambahin ini biar gak terlalu nempel ke atas */
 }
+
 
 .overlay {
     position: absolute;
@@ -114,4 +115,32 @@ footer {
 @media (max-width: 600px) {
     h1 { font-size: 2rem; }
     .profile-frame img { width: 120px; height: 120px; }
+}
+.about-me {
+    padding: 60px 20px;
+    background-color: #1a1a1a; /* Warna beda dikit biar ada pemisah */
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-me h2 {
+    color: #0088ff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-me p {
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.status-joke {
+    margin-top: 20px;
+    font-style: italic;
+    color: #ff4d4d !important; /* Warna merah biar stand out */
 }
