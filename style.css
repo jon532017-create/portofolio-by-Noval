@@ -212,16 +212,23 @@ footer {
 
 .styled-table {
     border-collapse: collapse;
-    margin: 25px auto;
+    margin-left: auto;  /* Paksa rata tengah kanan */
+    margin-right: auto; /* Paksa rata tengah kiri */
+    margin-top: 25px;
+    margin-bottom: 25px;
     font-size: 0.9em;
-    min-width: 300px;
-    width: 100%;
-    max-width: 600px;
+    width: 90%;         /* Jangan 100% biar ada jarak di kiri kanan layar HP */
+    max-width: 500px;    /* Batas lebar maksimal biar gak kelebaran di laptop */
     box-shadow: 0 0 20px rgba(0, 136, 255, 0.1);
     border-radius: 10px;
-    overflow: hidden; /* Biar pojokannya tumpul */
+    overflow: hidden;
+    text-align: center; /* Biar teks di dalem sel juga tengah semua */
 }
 
+/* Biar judul tabel (th) juga di tengah */
+.styled-table thead tr th {
+    text-align: center;
+}
 .styled-table thead tr {
     background-color: #0088ff;
     color: #ffffff;
