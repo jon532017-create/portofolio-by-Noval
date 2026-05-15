@@ -144,3 +144,64 @@ footer {
     font-style: italic;
     color: #ff4d4d !important; /* Warna merah biar stand out */
 }
+.personal-info {
+    margin-top: 25px;
+    text-align: left; /* Biar list-nya rapi rata kiri di tengah */
+    display: inline-block;
+}
+
+.personal-info ul {
+    list-style: none; /* Ngilangin titik bullet standar */
+    padding: 0;
+}
+
+.personal-info li {
+    background: #222;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #0088ff; /* Garis biru di samping biar keren */
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.personal-info li strong {
+    color: #0088ff;
+    margin-right: 5px;
+}
+/* Animasi Muncul Pelan-pelan */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi Melayang (Floating) */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Terapin Animasi ke Konten */
+.hero-content {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.profile-frame img {
+    animation: float 3s ease-in-out infinite; /* Foto profil jadi melayang */
+}
+
+.card {
+    transition: transform 0.3s ease; /* Biar pas disentuh ada respon */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Card agak membesar pas kursor di atasnya */
+    border-color: #0088ff;
+}
