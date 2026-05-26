@@ -11,19 +11,22 @@ body {
 }
 
 header {
-    min-height: 60vh;
+    min-height: 50vh;          /* Sedikit diturunkan biar pas di layar HP */
     width: 100%;
-    background-image: url('ssstik.io_1779767247634.gif'); /* Sesuaikan nama file bg lu */
-    background-size: cover;
+    background-image: url('ssstik.io_1779767247634.gif');
+    background-size: 100% 100%; /* Memaksa GIF memenuhi seluruh area header tanpa kepotong */
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    align-items: center;    /* Maksa semua elemen anak lurus di tengah */
-    justify-content: center; /* Memposisikan konten pas di tengah vertikal */
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 20px;
     box-sizing: border-box;
+    position: relative;
 }
+
 .overlay {
     position: absolute;
     top: 0;
