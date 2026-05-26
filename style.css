@@ -11,20 +11,19 @@ body {
 }
 
 header {
-    min-height: 20vh; /* Ganti dari 100vh jadi min-height 60vh */
+    min-height: 60vh;
     width: 100%;
-    background: url('ssstik.io_1779767247634.gif'); /* Sesuaikan nama file bg lu */
+    background-image: url('1000423805.jpg'); /* Sesuaikan nama file bg lu */
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
-    padding-bottom: 50px; /* Tambahin ini biar ada ruang di bawah tombol */
-    padding-top: 50px;    /* Tambahin ini biar gak terlalu nempel ke atas */
+    align-items: center;    /* Maksa semua elemen anak lurus di tengah */
+    justify-content: center; /* Memposisikan konten pas di tengah vertikal */
+    text-align: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
-
-
 .overlay {
     position: absolute;
     top: 0;
@@ -44,10 +43,11 @@ nav {
 .logo span { color: #660000; }
 
 .hero-content {
-    z-index: 10;
-    text-align: center;
-    margin-top: 50px;
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Mengunci foto dan teks agar sejajar vertikal */
+    justify-content: center;
+    width: 100%;
 }
 
 .profile-frame {
@@ -62,11 +62,16 @@ nav {
     align-items: center;
 }
 
-.profile-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;     /* Biar fotonya gak gepeng pas diperbesar */
-}
+.profile-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #660000;
+    overflow: hidden;
+    margin: 0 auto 20px auto; /* Margin auto kiri kanan bikin dia fix di tengah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 { font-size: 2.5rem; margin-bottom: 10px; }
