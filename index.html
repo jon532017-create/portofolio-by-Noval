@@ -5,69 +5,312 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Nauval Yagami</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Kembali ke atas">↑</button>
+
+    <!-- Dark/Light Mode Toggle -->
+    <button id="theme-toggle" title="Ganti tema">🌙</button>
 
     <header>
         <div class="overlay"></div>
         <nav>
             <div class="logo">RAJA MTK<span>.</span></div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
 
         <div class="hero-content">
             <div class="profile-frame">
-                <img src="ssstik.io_1779767657981.gif" alt="Nauval">
+                <img src="https://ssstik.io_1779767657981.gif" alt="Nauval">
             </div>
             <h1>Nauval <span class="blue-text">(Yagami)</span></h1>
             <p class="status">Pelajar SMKS DHARMA BAHARI 02 SURABAYA</p>
-            
+            <p class="relationship">💔 Status: <span class="jomblo">Jomblo</span></p>
+
+            <!-- Typing Animation -->
+            <p class="typing-wrapper">Gw itu: <span id="typing-text" class="typing-anim"></span></p>
+
             <div class="socmed">
-                <a href="https://instagram.com/v4l_kebab" target="_blank">Instagram</a>
-                <a href="https://wa.me/6281235262956" target="_blank">WhatsApp</a>
+                <a href="https://instagram.com/v4l_kebab" target="_blank">📸 Instagram</a>
+                <a href="https://wa.me/6281235262956" target="_blank">💬 WhatsApp</a>
             </div>
         </div>
     </header>
-    <section class="about-me">
-    <div class="container">
-        <h2>About Gweh</h2>
-        <p>
-            Hai Nama gw <b>Nauval</b>, tapi sering dipanggil <b>Yagami(COTE)</b>. 
-            Saat ini gw lagi menempuh pendidikan di <b>SMKS DHARMA BAHARI 02 SURABAYA, kelas 10 TKJ 1</b>. 
-            GW itu orangnya suka tantangan, apalagi kalau soal logika dan hitung-hitungan, Ga tau kenapa, kadang gw mikir kok bisa ya gw bisa MaTEmAtIKa, dan kenapa orang-orang ga suka, kenapa nyak?.
-        </p>
-        <section class="skills-table">
-    <div class="container">
-        <h2>Statistik Kemampuan</h2>
-        <table class="styled-table">
-            <thead>
-                <tr>
-                    <th>Mata Pelajaran</th>
-                    <th>Grade</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Matematika</td>
-                    <td class="grade-a">A+</td>
-                    <td>Expert</td>
-                </tr>
-                <tr>
-                    <td>PKN</td>
-                    <td class="grade-c">C-</td>
-                    <td>Basic</td>
-                </tr>
-                <tr>
-                    <td>Olahraga</td>
-                    <td class="grade-a">A</td>
-                    <td>Pro</td>
-                </tr>
-                <tr>
-                    <td>Bahasa Inggris</td>
-                    <td class="grade-c">B</td>
-                    <td>Bot</td>
-                </tr>
+
+    <!-- About Section -->
+    <section class="about-me" id="about">
+        <div class="container">
+            <h2>About Gweh 👤</h2>
+            <p>
+                Hai Nama gw <b>Nauval</b>, tapi sering dipanggil <b>Yagami(COTE)</b>.
+                Saat ini gw lagi menempuh pendidikan di <b>SMKS DHARMA BAHARI 02 SURABAYA, kelas 10 TKJ 1</b>.
+                GW itu orangnya suka tantangan, apalagi kalau soal logika dan hitung-hitungan,
+                Ga tau kenapa, kadang gw mikir kok bisa ya gw bisa MaTEmAtIKa, dan kenapa orang-orang ga suka, kenapa nyak?.
+            </p>
+
+            <!-- Personal Info Cards -->
+            <div class="personal-info">
+                <ul>
+                    <li><strong>📍 Alamat:</strong> Surabaya, Jawa Timur</li>
+                    <li><strong>🎂 Tgl Lahir:</strong> 31 Mei, 2009</li>
+                    <li><strong>🏫 Sekolah:</strong> SMKS DHARMA BAHARI 02</li>
+                    <li><strong>🎮 Hobi Lain:</strong> Main Game, Ngoding (Baru Belajar King)</li>
+                </ul>
+            </div>
+
+            <p class="status-joke">Status: Jomblo 💔</p>
+        </div>
+    </section>
+
+    <!-- Skills Stats Section -->
+    <section class="skills-table" id="skills">
+        <div class="container">
+            <h2>Statistik Kemampuan 📊</h2>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Mata Pelajaran</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Matematika</td><td class="grade-a">A+</td><td>Expert</td></tr>
+                    <tr><td>PKN</td><td class="grade-c">C-</td><td>Basic</td></tr>
+                    <tr><td>Olahraga</td><td class="grade-a">A</td><td>Pro</td></tr>
+                    <tr><td>Bahasa Inggris</td><td class="grade-c">B</td><td>Bot</td></tr>
+                    <tr><td>Sejarah</td><td class="grade-b">B+</td><td>Intermediate +</td></tr>
+                    <tr><td>IPAS</td><td class="grade-a">A+</td><td>Expert</td></tr>
+                    <tr><td>Bahasa Indonesia</td><td class="grade-a">A+</td><td>Expert</td></tr>
+                    <tr><td>Pelajaran Kejuruan</td><td class="grade-a">A+</td><td>Expert</td></tr>
+                </tbody>
+            </table>
+
+            <!-- Skill Bars (NEW) -->
+            <h2 style="margin-top:40px;">Skill Progress 🚀</h2>
+            <div class="skill-bars">
+                <div class="skill-item">
+                    <div class="skill-label"><span>Matematika</span><span>95%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Ngoding</span><span>40%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Logika</span><span>88%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>Gaming</span><span>80%</span></div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-label"><span>PKN 💀</span><span>20%</span></div>
+                    <div class="skill-bar"><div class="skill-fill low" data-width="20"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobi & Keahlian -->
+    <section class="info-section" id="hobi">
+        <h2>Hobi & Keahlian 🎯</h2>
+        <div class="grid-box">
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Jogging</h3>
+                <p>Lari pagi biar otak fresh, body fit!</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏊</div>
+                <h3>Renang</h3>
+                <p>Nyebur kolam, refreshing abis!</p>
+            </div>
+            <div class="card highlight">
+                <div class="card-icon">📐</div>
+                <h3>Ahli Matematika</h3>
+                <p>Jago hitung-hitungan, bos!</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎮</div>
+                <h3>Gaming</h3>
+                <p>Main game buat ngilangin stress!</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Ngoding</h3>
+                <p>Baru belajar, tapi semangat king!</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <h3>Problem Solving</h3>
+                <p>Demen pecahin masalah logika!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (NEW) -->
+    <section class="info-section" id="projects">
+        <h2>Project Gw 🛠️</h2>
+        <div class="grid-box">
+            <div class="project-card">
+                <div class="project-tag">HTML/CSS</div>
+                <h3>Portfolio Website</h3>
+                <p>Website portofolio pribadi yang lagi lo liat ini. Dibuat dari scratch!</p>
+                <div class="project-links">
+                    <a href="#" class="btn-project">🔗 Demo</a>
+                    <a href="https://github.com/jon532017-create/portofolio-by-Noval" target="_blank" class="btn-project">💻 GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-tag">Coming Soon</div>
+                <h3>Project Berikutnya</h3>
+                <p>Masih dalam proses belajar dan eksperimen. Stay tuned king!</p>
+                <div class="project-links">
+                    <a href="#" class="btn-project disabled">🚧 WIP</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-tag">Coming Soon</div>
+                <h3>??? Project</h3>
+                <p>Ide ada, skill lagi diasah. Pantau terus ya bro!</p>
+                <div class="project-links">
+                    <a href="#" class="btn-project disabled">🔒 Soon</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (NEW) -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Hubungi Gw 📬</h2>
+            <p class="contact-sub">Mau collab, nanya soal MTK, atau sekadar ngobrol? Gas!</p>
+            <div class="contact-grid">
+                <a href="https://instagram.com/v4l_kebab" target="_blank" class="contact-card">
+                    <span class="contact-icon">📸</span>
+                    <span>Instagram</span>
+                    <span class="contact-handle">@v4l_kebab</span>
+                </a>
+                <a href="https://wa.me/6281235262956" target="_blank" class="contact-card">
+                    <span class="contact-icon">💬</span>
+                    <span>WhatsApp</span>
+                    <span class="contact-handle">+62 812-3526-2956</span>
+                </a>
+                <a href="https://github.com/jon532017-create" target="_blank" class="contact-card">
+                    <span class="contact-icon">🐙</span>
+                    <span>GitHub</span>
+                    <span class="contact-handle">jon532017-create</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by <strong>Nauval</strong> &copy; 2026 | Made with ❤️ & ☕</p>
+        <p class="footer-sub">Dari Surabaya untuk dunia 🌏</p>
+    </footer>
+
+    <script>
+        // === Scroll Progress Bar ===
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            document.getElementById('scroll-progress').style.width = progress + '%';
+
+            // Back to top button visibility
+            const btn = document.getElementById('back-to-top');
+            btn.style.display = scrollTop > 300 ? 'block' : 'none';
+        });
+
+        // === Back to Top ===
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // === Dark/Light Mode Toggle ===
+        const themeBtn = document.getElementById('theme-toggle');
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            themeBtn.textContent = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
+        });
+
+        // === Typing Animation ===
+        const phrases = [
+            'Jago Matematika 📐',
+            'Gamers Sejati 🎮',
+            'Future Programmer 💻',
+            'Pecinta Logika 🧠',
+            'Anak SMKS Bahari 🏫'
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingEl = document.getElementById('typing-text');
+
+        function typeEffect() {
+            const current = phrases[phraseIndex];
+            if (isDeleting) {
+                typingEl.textContent = current.substring(0, charIndex--);
+            } else {
+                typingEl.textContent = current.substring(0, charIndex++);
+            }
+
+            if (!isDeleting && charIndex === current.length + 1) {
+                isDeleting = true;
+                setTimeout(typeEffect, 1500);
+                return;
+            }
+            if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+            }
+            setTimeout(typeEffect, isDeleting ? 60 : 100);
+        }
+        typeEffect();
+
+        // === Skill Bars Animation on Scroll ===
+        const skillFills = document.querySelectorAll('.skill-fill');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const width = target.getAttribute('data-width');
+                    target.style.width = width + '%';
+                }
+            });
+        }, { threshold: 0.3 });
+
+        skillFills.forEach(fill => observer.observe(fill));
+
+        // === Fade In on Scroll ===
+        const fadeEls = document.querySelectorAll('.card, .project-card, .contact-card, .skill-item');
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeEls.forEach(el => fadeObserver.observe(el));
+    </script>
+</body>
+    </html>                </tr>
                 <tr>
                     <td>Sejarah</td>
                     <td class="grade-b">B+</td>
