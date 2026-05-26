@@ -11,18 +11,18 @@ body {
 }
 
 header {
-    min-height: 50vh;          /* Sedikit diturunkan biar pas di layar HP */
+    height: 320px;             /* Kita kunci tingginya segini biar pas sama skala GIF-nya */
     width: 100%;
     background-image: url('ssstik.io_1779767247634.gif');
-    background-size: 100% 100%; /* Memaksa GIF memenuhi seluruh area header tanpa kepotong */
-    background-position: center;
+    background-size: cover;    /* Biar gambar gak gepeng */
+    background-position: center 20%; /* Geser fokus background agak ke atas sedikit */
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px;
     box-sizing: border-box;
     position: relative;
 }
