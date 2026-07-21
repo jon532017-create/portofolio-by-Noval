@@ -100,9 +100,9 @@ body {
 /* === HEADER RESIZED (4:3 AREA) === */
 header {
     width: 100%;
-    max-width: 500px;          /* Mengunci lebar maksimal biar gak kelebaran */
-    aspect-ratio: 4 / 3;       /* Otomatis bikin proporsi kotak landscape 4:3 */
-    margin: 0 auto;            /* Bikin area header pas di tengah layar */
+    max-width: 500px;
+    aspect-ratio: 16 / 9;   /* ganti dari 4/3 ke 16/9 */
+    margin: 0 auto;
     background-image: url('ssstik.io_1779767247634.gif');
     background-size: cover;
     background-position: center;
@@ -137,37 +137,21 @@ header {
     z-index: 2; /* Maksa tulisan & foto nembus di atas overlay */
 }
 
-/* === BINGKAI PROFIL CUSTOME ala ML === */
-.profile-container-ml {
-    position: relative;
-    width: 120px;              /* Ukuran frame luar (Bisa lu ubah kalau mau lebih besar) */
+.profile-frame {
+    width: 120px;
     height: 120px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--accent);
 }
 
-/* Foto Profil Utama (Kotak 1:1) */
-.foto-profil {
-    width: 76%;                /* Masuk ke dalam border agar pas di tengah */
-    height: 76%;
-    object-fit: cover;
-    border-radius: 8px;        /* Sisi pojok agak tumpul tipis biar mirip avatar asli ML */
-    position: absolute;
-    z-index: 2;
-}
-
-/* Layer Border GIF */
-.border-avatar {
+.profile-frame img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    position: absolute;
-    z-index: 3;                /* Berada di paling depan menimpa foto */
-    pointer-events: none;
+    object-fit: cover; /* biar gambar gak gepeng, tetep proporsional */
+    display: block;
 }
-
 /* Teks Pelengkap */
 .title-top {
     color: #ffffff;
